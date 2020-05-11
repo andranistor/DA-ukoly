@@ -179,19 +179,22 @@ let roll = () => {
   return Math.floor(Math.random() * 6) + 1;
 };
 let i3 = 1;
+let j = 1;
+let pokusy = [];
 
-while (i3 < 20) {
-  roll()[i3];
-  let side = roll();
-  if (side === 6) {
-    // console.log('6 - padla šestka!');
-    // console.log('Šestka padla na ' + i3 + '. pokus');
-    break; // Zastaví cyklus, pokud bude splněna podmínka, tj. že padne šestka.
+while (i3 <= 10) {
+  while (true) {
+    let side = roll();
+    if (side === 6) {
+      pokusy.push(j);
+      break; // Zastaví cyklus, pokud bude splněna podmínka, tj. že padne šestka.
+    }
+    j++;
   }
-  // console.log(side);
+  j = 1;
   i3++;
 };
-// Pro další hod kostkou je třeba aktualizovat prohlížeč (F5).
+console.log('Šestka padla na tyto pokusy: ' + pokusy + '.');
 
 
 
