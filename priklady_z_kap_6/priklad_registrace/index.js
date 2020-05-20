@@ -37,10 +37,7 @@ const compareName = () => {
   }
 };
 
-userNameElm.addEventListener('keyup', compareName); // cyklus je spuštěn po každém zadaném písmenku
-
-// Alternativa, která hlášku vypíše, až potom, co uživatel klikne, nebo tabulátorem přejde mimo políčko:
-// userNameElm.addEventListener('change', compareName);
+userNameElm.addEventListener('input', compareName);
 
 
 // Fce, ktere vypise, zda je heslo dostatecne bezpecne
@@ -54,7 +51,7 @@ const passSec = () => {
   }
 };
 
-pass1Elm.addEventListener('change', passSec);
+pass1Elm.addEventListener('input', passSec);
 
 
 // Fce, ktere vypise, ze jsou zadana hesla ruzna
@@ -67,4 +64,4 @@ const passCompare = () => {
   }
 };
 
-pass2Elm.addEventListener('change', passCompare);
+pass2Elm.addEventListener('input', passCompare);
