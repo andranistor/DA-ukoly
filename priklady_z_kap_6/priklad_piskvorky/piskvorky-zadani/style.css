@@ -12,6 +12,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
 }
 
 .field {
@@ -43,21 +44,13 @@ body {
   display: flex;
 }
 
-.onTurnText {
+.stateText {
   color: rgba(255, 255, 255, 0.8);
   margin: 1rem 0;
 }
 
 .symbol {
   display: flex;
-}
-
-.draw {
-  color: whitesmoke;
-}
-
-.winner {
-  color: rgb(3, 192, 3);
 }
 
 .cross,
@@ -85,18 +78,21 @@ body {
 }
 
 .btns {
-  margin: 1rem;
+  margin-top: 3rem;
 }
 
 button {
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
   border-radius: 5px;
-  padding: 5px;
+  padding: 0.3rem;
 }
 
 .btn__restart {
   color: rgba(255, 255, 255, 0.836);
   background-color: darkgreen;
   border: solid 1px darkgreen;
+  margin-left: 10px;
 }
 
 .btn__help {

@@ -155,7 +155,7 @@ const patterns = [
 
 const squareElm = document.querySelectorAll('.square');
 let onTurn = 1; // 1 = cross, -1 = circle
-const stateTextElm = document.querySelector('.gameStateText');
+const stateTextElm = document.querySelector('.stateText');
 const symbolElm = document.querySelector('.symbol');
 
 
@@ -168,22 +168,26 @@ const score = () => {
     }
 
     if (product === 4) {
-      stateTextElm.innerHTML = `
-      <p class="winner"> Vyhrál křížek!</p>
-      `;
+      stateTextElm.textContent = "Vyhrál křížek!";
+      stateTextElm.style.color = "rgb(3, 192, 3)";
+      symbolElm.innerHTML = `
+      <img class="cross" src="./img/cross.svg" alt="Cross" />
+    `
       squareClickListener(false);
       break;
     }
     else if (product === -4) {
-      stateTextElm.innerHTML = `
-      <p class="winner"> Vyhrálo kolečko!</p>
-      `;
+      stateTextElm.textContent = "Vyhrálo kolečko!";
+      stateTextElm.style.color = "rgb(3, 192, 3)";
+      symbolElm.innerHTML = `
+       <img class="circle" src="./img/circle.svg" alt="Circle" />
+    `
       squareClickListener(false);
       break;
     } else if (!gamePlan.includes(0)) {
-      stateTextElm.innerHTML = `
-      <p class="draw"> Je to remíza.</p>
-      `;
+      stateTextElm.textContent = "Je to remíza.";
+      stateTextElm.style.color = "whitesmoke";
+      symbolElm.innerHTML = "";
       squareClickListener(false);
       break;
     }
@@ -238,6 +242,8 @@ squareClickListener(true);
 // Btn click to restart a new game, i.e. removing classes and resetting the gamePlan
 const restartGame = () => {
   gamePlan = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  stateTextElm.textContent = "Na řadě je";
+  stateTextElm.style.color = "rgba(255, 255, 255, 0.8)";
   if (onTurn === 1) {
     symbolElm.innerHTML = `
       <img class="cross" src="./img/cross.svg" alt="Cross" />
