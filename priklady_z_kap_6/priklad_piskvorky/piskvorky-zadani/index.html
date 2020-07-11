@@ -7,6 +7,12 @@
     <title>Piškvorky</title>
   </head>
   <body>
+    <div class="gameStateText">
+      <p class="onTurnText">Na řadě je</p>
+      <div class="symbol">
+        <img class="cross" src="./img/cross.svg" alt="Cross" />
+      </div>
+    </div>
     <div class="field">
       <div class="square" data-index="0"></div>
       <div class="square" data-index="1"></div>
@@ -25,7 +31,18 @@
       <div class="square" data-index="14"></div>
       <div class="square" data-index="15"></div>
     </div>
-    <button class="btn__restart">Začít znovu</button>
+    <div class="btns">
+      <button class="btn__help">Nápověda</button>
+      <button class="btn__restart">Začít znovu</button>
+    </div>
+    <div class="rules" style="display: none">
+      <p class="helpText">Výhrávají následující vzory:</p>
+      <img
+        class="winningPatterns"
+        src="./img/winningPatterns.svg"
+        alt="Winning patterns of tic tac toe"
+      />
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

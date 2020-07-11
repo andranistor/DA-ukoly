@@ -6,8 +6,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
-  background-image: url('img/bg.jpg');
+  background-image: url("img/bg.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -31,9 +32,74 @@ body {
 }
 
 .square--cross {
-  background-image: url('img/cross.svg');
+  background-image: url("img/cross.svg");
 }
 
 .square--circle {
-  background-image: url('img/circle.svg');
+  background-image: url("img/circle.svg");
+}
+
+.gameStateText {
+  display: flex;
+}
+
+.onTurnText {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 1rem 0;
+}
+
+.symbol {
+  display: flex;
+}
+
+.draw {
+  color: whitesmoke;
+}
+
+.winner {
+  color: rgb(3, 192, 3);
+}
+
+.cross,
+.circle {
+  width: 1.7rem;
+}
+
+.rules {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.winningPatterns {
+  background-color: whitesmoke;
+  width: 60%;
+  min-width: 300px;
+  margin: 1rem;
+}
+
+.helpText {
+  color: rgb(211, 210, 210);
+  margin: 2rem 0 0 0;
+}
+
+.btns {
+  margin: 1rem;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.btn__restart {
+  color: rgba(255, 255, 255, 0.836);
+  background-color: darkgreen;
+  border: solid 1px darkgreen;
+}
+
+.btn__help {
+  background-color: lightcyan;
+  border: solid 1px lightcyan;
 }
