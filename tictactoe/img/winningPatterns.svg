@@ -1,0 +1,80 @@
+<svg width="500" height="600" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="602" width="502" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_90">
+   <g stroke="#000" id="svg_2" stroke-width="2" fill="none">
+    <path stroke="null" id="svg_3" d="m110,52.000006l0,160"/>
+    <path stroke="null" id="svg_4" d="m190,52.000006l0,160"/>
+    <path stroke="null" id="svg_5" d="m150,52.000006l0,160"/>
+    <path stroke="null" id="svg_6" d="m70,92.000006l160,0"/>
+    <path stroke="null" id="svg_7" d="m70,132.000006l160,0"/>
+    <path stroke="null" id="svg_8" d="m70,172.000006l160,0"/>
+   </g>
+   <g stroke="null" id="svg_9">
+    <rect stroke="null" id="svg_10" ry="0" height="20" width="20" y="102.000006" x="120"/>
+    <rect stroke="null" id="svg_11" ry="0" height="20" width="20" y="102.000006" x="80"/>
+    <rect stroke="null" id="svg_12" ry="0" height="20" width="20" y="102.000006" x="160"/>
+    <rect stroke="null" id="svg_13" ry="0" height="20" width="20" y="102.000006" x="200"/>
+   </g>
+   <g stroke="#000" id="svg_14" stroke-width="2" fill="none">
+    <path stroke="null" id="svg_15" d="m310,52.000006l0,160"/>
+    <path stroke="null" id="svg_16" d="m390,52.000006l0,160"/>
+    <path stroke="null" id="svg_17" d="m350,52.000006l0,160"/>
+    <path stroke="null" id="svg_18" d="m270,92.000006l160,0"/>
+    <path stroke="null" id="svg_19" d="m270,132.000006l160,0"/>
+    <path stroke="null" id="svg_20" d="m270,172.000006l160,0"/>
+   </g>
+   <g stroke="null" id="svg_21">
+    <rect stroke="null" id="svg_22" ry="0" height="20" width="20" y="102.000006" x="320"/>
+    <rect stroke="null" id="svg_23" ry="0" height="20" width="20" y="62.000006" x="320"/>
+    <rect stroke="null" id="svg_24" ry="0" height="20" width="20" y="142.000006" x="320"/>
+    <rect stroke="null" id="svg_25" ry="0" height="20" width="20" y="182.000006" x="320"/>
+   </g>
+   <g stroke="#000" id="svg_26" stroke-width="2" fill="none">
+    <path stroke="null" id="svg_27" d="m310,331.000006l0,160"/>
+    <path stroke="null" id="svg_28" d="m390,331.000006l0,160"/>
+    <path stroke="null" id="svg_29" d="m350,331.000006l0,160"/>
+    <path stroke="null" id="svg_30" d="m270,371.000006l160,0"/>
+    <path stroke="null" id="svg_31" d="m270,411.000006l160,0"/>
+    <path stroke="null" id="svg_32" d="m270,451.000006l160,0"/>
+   </g>
+   <g stroke="null" id="svg_33">
+    <rect stroke="null" id="svg_34" ry="0" height="20" width="20" y="381.000006" x="320"/>
+    <rect stroke="null" id="svg_35" ry="0" height="20" width="20" y="341.000006" x="280"/>
+    <rect stroke="null" id="svg_36" ry="0" height="20" width="20" y="421.000006" x="360"/>
+    <rect stroke="null" id="svg_37" ry="0" height="20" width="20" y="461.000006" x="400"/>
+   </g>
+   <g stroke="#000" id="svg_73" stroke-width="2" fill="none">
+    <path stroke="null" id="svg_74" d="m110,332.000006l0,160"/>
+    <path stroke="null" id="svg_75" d="m190,332.000006l0,160"/>
+    <path stroke="null" id="svg_76" d="m150,332.000006l0,160"/>
+    <path stroke="null" id="svg_77" d="m70,372.000006l160,0"/>
+    <path stroke="null" id="svg_78" d="m70,412.000006l160,0"/>
+    <path stroke="null" id="svg_79" d="m70,452.000006l160,0"/>
+   </g>
+   <g stroke="null" id="svg_80">
+    <rect stroke="null" id="svg_81" ry="0" height="20" width="20" y="382.000006" x="160"/>
+    <rect stroke="null" id="svg_82" ry="0" height="20" width="20" y="462.000006" x="80"/>
+    <rect stroke="null" id="svg_83" ry="0" height="20" width="20" y="422.000006" x="120"/>
+    <rect stroke="null" id="svg_84" ry="0" height="20" width="20" y="342.000006" x="200"/>
+   </g>
+   <text stroke="null" id="svg_85" xml:space="preserve" text-anchor="middle" font-weight="bold" font-size="26.67px" font-family="Lato" fill="#000000" y="542.016636" x="150">
+    <tspan stroke="null" id="svg_86" font-weight="normal" font-family="Montserrat" y="542.016636" x="150">diagonála</tspan>
+   </text>
+   <text font-size="26.67" stroke="null" id="svg_63" xml:space="preserve" y="260.016636" x="120">
+    <tspan stroke="null" id="svg_64" font-weight="normal" font-family="Montserrat" y="261.016636" x="120">řádek</tspan>
+   </text>
+   <text font-size="26.67" stroke="null" id="svg_65" xml:space="preserve" y="260.016636" x="309">
+    <tspan stroke="null" id="svg_66" font-weight="normal" font-family="Montserrat" y="261.016636" x="309">sloupec</tspan>
+   </text>
+   <text stroke="null" id="svg_89" xml:space="preserve" text-anchor="middle" font-weight="bold" font-size="26.67px" font-family="Lato" fill="#000000" y="540.016636" x="351">
+    <tspan stroke="null" id="svg_88" font-weight="normal" font-family="Montserrat" y="540.016636" x="351">diagonála</tspan>
+   </text>
+  </g>
+ </g>
+</svg>
