@@ -1,12 +1,10 @@
 'use strict';
 
 let gamePlan = [
-  [0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0]
 ];
 // 0 = blank field
 
@@ -23,6 +21,25 @@ const squareElm = document.querySelectorAll('.square');
 const stateTextElm = document.querySelector('.stateText');
 const symbolElm = document.querySelector('.symbol');
 
+/////////////////////
+// AI vs Human game
+let ai = cross;
+let human = circle;
+let currentPlayer = human;
+
+const mousePressed = (rowNumber, columnNumber, gamePlan) => {
+  if (currentPlayer == human) {
+
+    // Human's turn
+    if (gamePlan[rowNumber][columnNumber] === 0) {
+      gamePlan[rowNumber][columnNumber] = human;
+      currentPlayer = ai;
+      bestMove(rowNumber, columnNumber, gamePlan);
+    }
+  }
+};
+
+//////////
 
 // Determining the winner
 const winner = (checkWinningPattern) => {
@@ -230,16 +247,20 @@ const squareClick = function () {
   const rowNumber = this.dataset.row;
   const columnNumber = this.dataset.column;
 
+  // mousePressed(rowNumber, columnNumber, gamePlan);
+
   if (gamePlan[rowNumber][columnNumber] === 0) {
-    if (next === cross) {
+    if (next === cross || currentPlayer == ai) {
       this.classList.add('square--cross');
       gamePlan[rowNumber][columnNumber] = next;
       next = circle;
+      // currentPlayer = human;
     }
-    else if (next === circle) {
+    else if (next === circle || currentPlayer == human) {
       this.classList.add('square--circle');
       gamePlan[rowNumber][columnNumber] = next;
       next = cross;
+      // currentPlayer = ai;
     }
   }
 
@@ -267,12 +288,10 @@ squareClickListener(true);
 // Btn click to restart a new game, i.e. removing classes and resetting the gamePlan
 const restartGame = () => {
   gamePlan = [
-    [0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0]
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0]
   ];
   gameNumberFields = gamePlanHeight * gamePlanWidth;
 
