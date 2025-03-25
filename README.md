@@ -1,6 +1,3 @@
-# DA-ukoly
+## Digital academy web frontend 2020
 
-Ukoly a cviceni z DA
-
-Tic Tac Toe game:
-https://andranistor.github.io/DA-ukoly/priklady_z_kap_6/priklad_piskvorky/piskvorky-zadani/
+In this repository, you will find some tasks from the retraining course in Web Frontend (300+ hrs) organized by [Czechitas](https://www.czechitas.cz/) in 2020.
